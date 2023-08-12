@@ -1,5 +1,5 @@
-from src.cShip import Ship
-class Cruise(Ship):
+from src.cShip import cShip
+class cCruise(cShip):
     def __init__(self, passengers, draft, crew):
         self.passengers = passengers
-        Ship.__init__(self, draft, crew)
+        cShip.__init__(self, draft, crew)
