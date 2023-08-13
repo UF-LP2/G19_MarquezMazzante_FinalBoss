@@ -18,6 +18,7 @@ class Test3 (unittest.TestCase):
         assert Cruise.is_worth_it() == ##en otro momento
 
 
+
 if __name__ == '__main__':
     unittest.main()
 
