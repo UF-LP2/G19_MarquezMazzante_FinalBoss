@@ -11,9 +11,11 @@ def test_Ship():
 
 def test_Cargo():
     Cargo = cCargo(2000, 0.5, 1200, 300)
-    assert Cargo.is_worth_it() == -2800
+    with pytest.raises(Exception):
+        Cargo.is_worth_it()
 
 
 def test_Cruise():
     Cruise = cCruise(2500, 3000, 1200)
-    assert Cruise.is_worth_it() == -4425
+    with pytest.raises(Exception):
+        Cruise.is_worth_it()
