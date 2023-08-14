@@ -14,5 +14,8 @@ class cCargo(cShip):
         elif(self.quality == 0.25):
             aux = self.cargo*0.5
 
-        worthIt = self.draft-aux
-        return worthIt
+        loot = self.draft - aux
+        if(loot > 20.0):
+            return loot                     #barco merece ser robado
+        else:
+            raise Exception("Error")

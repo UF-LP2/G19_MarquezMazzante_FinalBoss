@@ -6,8 +6,8 @@ class cShip(object):
         cShip.cantBarcos = cShip.cantBarcos+1
 
     def is_worth_it(self):
-        worthIt = self.draft-self.crew*1.5
-        return worthIt
-
-
-    #hola lolo
+        loot = self.draft-self.crew*1.5
+        if(loot > 20.0):
+            return loot                     #barco merece ser robado
+        else:
+            raise Exception("Error")
