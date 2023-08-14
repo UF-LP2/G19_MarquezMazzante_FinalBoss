@@ -8,3 +8,6 @@ class cShip(object):
     def is_worth_it(self):
         worthIt = self.draft-self.crew*1.5
         return worthIt
+
+
+    #hola lolo
