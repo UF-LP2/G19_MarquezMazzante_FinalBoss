@@ -19,3 +19,15 @@ def test_Cruise():
     Cruise = cCruise(2500, 3000, 1200)
     with pytest.raises(Exception):
         Cruise.is_worth_it()
+
+def test_Cuatro():
+    Cruise= cCruise(29,2823,51)
+    assert Cruise.is_worth_it()== 2681.25
+
+def test_Cinco():
+    Cargo=cCargo(51, 0.25, 2827, 117)
+    assert Cargo.is_worth_it()== 2626
+
+def test_Seis():
+    Cargo=cCargo(34, 0.5, 4231, 1290)
+    assert Cargo.is_worth_it()== 2228
