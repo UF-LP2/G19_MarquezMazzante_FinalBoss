@@ -25,13 +25,13 @@ def main() -> None:
         ships.append(cargoaux)
         #print("cree un cargo")
 
-  print("Numero de barcos",cShip.cantBarcos)
+  print("Numero de barcos", cShip.cantBarcos)
   for i in range(len(ships)):
     try:
       loot = ships[i].is_worth_it()
-      print("draft",ships[i].draft,"Merece ser robado")
+      print("Barco nº",i+1,"Merece ser robado")
     except Exception:
-      print("draft",ships[i].draft,"No vale la pena ser robado")
+      print("Barco nº",i+1,"No vale la pena ser robado")
 
 if __name__ == "__main__":
   main()
