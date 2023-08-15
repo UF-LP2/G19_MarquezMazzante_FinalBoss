@@ -6,6 +6,8 @@ class Cargo(Ship):
         Ship.__init__(self, draft, crew)
 
     def is_worth_it(self):
+        if self.draft < 0 or self.crew < 0 or self.quality<0 or self.cargo<0:
+            raise ValueError("Error logico")
         aux = (self.crew)* 1.5
         if(self.quality == 1 and self.cargo != ""):
             aux += float(self.cargo)*3.5
