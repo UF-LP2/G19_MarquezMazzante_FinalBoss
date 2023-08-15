@@ -10,4 +10,4 @@ class cShip(object):
         if(loot > 20.0):
             return loot                     #barco merece ser robado
         else:
-            raise Exception("Error")
+            raise ValueError("Error")
