@@ -1,5 +1,5 @@
 import pytest
-from src.cCruise import cCruise
+from src.Cruise import cCruise
 
 def test_Cruise1():
     Cruise1 = cCruise(2500, 3000, 1200)

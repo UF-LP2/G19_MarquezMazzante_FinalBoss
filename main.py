@@ -1,7 +1,7 @@
 import csv
-from src.cShip import cShip
-from src.cCargo import cCargo
-from src.cCruise import cCruise
+from src.Ship import Ship
+from src.Cargo import Cargo
+from src.Cruise import Cruise
 
 def isNumeric(aux):
   try:
@@ -19,19 +19,19 @@ def main() -> None:
 
       if (row[2] == '' and row[3] == ''):
         if isNumeric(row[0]) and isNumeric(row[1]):
-          shipaux = cShip(row[0],row[1])
+          shipaux = Ship(row[0],row[1])
           ships.append(shipaux)
 
       elif (row[2]!= '' and row[3] == ''):
         if isNumeric(row[2]) and isNumeric(row[0]) and isNumeric(row[1]):
-          cruiseaux = cCruise(row[2],row[0],row[1])
+          cruiseaux = Cruise(row[2],row[0],row[1])
           ships.append((cruiseaux))
 
       else:
         if row[2]== '':
           row[2]=0
         if isNumeric(row[3]) and isNumeric(row[0]) and isNumeric(row[1]):
-          cargoaux = cCargo(row[2],row[3],row[0],row[1])
+          cargoaux = Cargo(row[2],row[3],row[0],row[1])
           ships.append(cargoaux)
 
   #print("Numero de barcos", cShip.cantBarcos)

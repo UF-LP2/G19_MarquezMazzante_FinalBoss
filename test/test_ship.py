@@ -1,5 +1,5 @@
 import pytest
-from src.cShip import cShip
+from src.Ship import cShip
 
 def test_Ship1():
     Ship1 = cShip(2000, 300)

@@ -1,9 +1,9 @@
-from src.cShip import cShip
-class cCargo(cShip):
+from src.Ship import Ship
+class Cargo(Ship):
     def __init__(self, cargo, quality, draft, crew):
         self.cargo = cargo
         self.quality = float(quality)
-        cShip.__init__(self, draft, crew)
+        Ship.__init__(self, draft, crew)
 
     def is_worth_it(self):
         aux = (self.crew)* 1.5
