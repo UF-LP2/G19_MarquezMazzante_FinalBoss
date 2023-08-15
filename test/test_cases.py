@@ -31,3 +31,8 @@ def test_Cinco():
 def test_Seis():
     Cargo=cCargo(34, 0.5, 4231, 1290)
     assert Cargo.is_worth_it()== 2228
+
+def test_siete():
+    with pytest.raises(Exception):
+     Ship=cShip("holaa", 1200)
+

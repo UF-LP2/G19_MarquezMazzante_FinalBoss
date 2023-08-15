@@ -1,8 +1,11 @@
 class cShip(object):
     cantBarcos=0
     def __init__(self, draft, crew):
+        if str.isdigit(draft)== False or str.isdigit(crew)== False:
+            raise Exception("Datos invalidos")
         self.draft = float(draft)
         self.crew = float(crew)
+
         cShip.cantBarcos = cShip.cantBarcos+1
 
     def is_worth_it(self):
