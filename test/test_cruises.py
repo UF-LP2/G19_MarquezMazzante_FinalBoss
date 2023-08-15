@@ -1,5 +1,5 @@
 import pytest
-from src.Cruise import Cruise
+from src.ships import Cruise
 
 def test_Cruise1():
     Cruise1 = Cruise(2500, 3000, 1200)

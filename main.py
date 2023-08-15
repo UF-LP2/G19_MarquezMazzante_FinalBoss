@@ -1,7 +1,7 @@
 import csv
-from src.Ship import Ship
-from src.Cargo import Cargo
-from src.Cruise import Cruise
+from src.ships import Ship
+from src.ships import Cargo
+from src.ships import Cruise
 
 def isNumeric(aux):
   try:

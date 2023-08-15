@@ -1,5 +1,5 @@
 import pytest
-from src.Cargo import Cargo
+from src.ships import Cargo
 
 def test_Cargo1():
     Cargo1 = Cargo(2000, 0.5, 1200, 300)
