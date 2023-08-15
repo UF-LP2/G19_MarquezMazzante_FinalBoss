@@ -6,8 +6,10 @@ class Ship(object):
         Ship.cantBarcos = Ship.cantBarcos+1
 
     def is_worth_it(self):
+        if(self.draft < 0 or self.crew < 0):
+            raise ValueError("Error logico")
         loot = self.draft - self.crew*1.5
         if(loot > 20.0):
             return loot                     #barco merece ser robado
         else:
-            raise ValueError("Error")
+            raise ValueError("No merece ser robado")
